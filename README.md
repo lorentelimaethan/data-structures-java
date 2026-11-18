@@ -13,18 +13,17 @@ Small Java data structures and practice exercises for learning how they work.
 
 `Main.java` keeps the exercises separate from the data structure classes:
 
-- **Hash map:** add entries and look up keys that exist or do not exist.
+- **Hash map:** look up keys that exist or do not exist.
 - **Binary tree:** search for values and compare two trees.
 - **Linked list:** find the middle value, search for a value, and find a value from the end using two pointers.
 - **Array:** find a value at an index, find the index of a value, and calculate the best profit from a sequence of prices.
 
-The examples print the expected result next to the actual result.
+## Run the tests
 
-## Run
-
-From the repository root, run:
+The JUnit 5 tests are in `src/test/java`. From the repository root, run:
 
 ```bash
-javac src/*.java
-java -cp src Main
+mvn test
 ```
+
+Maven prints the number of tests run and reports any failures.
